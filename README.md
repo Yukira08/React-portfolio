@@ -2,7 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Available Scripts
+
+After cloning or downloading the project, run : 
+
+### `npm install`
+
+Installs all the necessary dependencies to the local node_modules folder
 
 In the project directory, you can run:
 
