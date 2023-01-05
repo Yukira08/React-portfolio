@@ -1,0 +1,35 @@
+.custom__button{
+    background: var(--color-light);
+    color: var(--color-blue);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom__button:hover{
+    background: #618AD5;
+    color: var(--color-grey);
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #618AD5;
+}
+
+@media screen and (max-width: 350px) {
+    .custom__button{
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .custom__button{
+        font-size: 15px;
+        padding: 0.5rem 1rem;
+    }
+}

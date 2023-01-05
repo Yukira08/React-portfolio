@@ -1,0 +1,136 @@
+.about {
+    background: var(--color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem;
+    min-height: 80vh;
+}
+
+.about__img {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img img{
+    width: 80%;
+}
+
+.about__info{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 3rem;
+}
+
+/* .about_info-header_bg {
+    display: block;
+    position: relative;
+    width: 265px;
+    background: var(--color-grey);
+    color: var(--color-grey);
+    left: 10px;
+    top: 40px;
+    height: 70px;
+    border-radius: 5px;
+} */
+
+.about__info h1{
+    background: var(--color-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: var(--font-base);
+    color: var(--color-blue);
+    margin-bottom: 2rem;
+}
+
+.about__info p{
+    font-family: var(--font-alt);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 40px;
+    font-size: 25px;
+    color: var(--color-grey);
+}
+
+.about__info-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about__info-icons a{
+    padding: 1rem 2rem;
+}
+
+.about__icons{
+    color : #9EB7E5
+}
+
+.about__icons:hover{
+    color: #618AD5;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #618AD5;
+}
+
+
+@media screen and (min-width:1800px){
+    .about__info p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .about__info h1{
+        font-size: 120px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about{
+        flex-direction: column;
+    }
+
+    .about__img {
+        margin: 0 0 5rem 0;
+    }
+
+    .about__img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about__info h1{
+        font-size: 50px;
+    }
+
+    .about__info p{
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    .about__info {
+        margin: 0;
+    }
+
+    .about__info-icons a{
+        padding: 1rem 1rem;
+    }
+}

@@ -1,0 +1,143 @@
+.detail__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue);
+    padding: 4rem 6rem;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.project__detail-header_heading{
+    text-align: center;
+}
+
+.project__detail-header_heading h1{
+    color: var(--color-grey);
+    font-family: var(--font-base);
+    font-size: 90px;
+}
+
+.project__detail-header_img {
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__detail-header_img img{
+    width: 100%;
+}
+
+.detail__description{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-grey);
+    padding: 4rem 6rem;
+}
+
+.detail__description-title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.detail__description-title h1{
+    font-family: var(--font-base);
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+.detail__description-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.detail__description-info_content,
+.detail__description-info_des {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.detail__description-info_content h3{
+    color: var(--color-brown);
+    font-family: var(--font-alt);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.detail__description-info_content p{
+    color: var(--color-blue);
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.detail__description-info_des p{
+    color: var(--color-blue);
+    font-family: var(--font-alt);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.detail__description-info_des p:first-child{
+    text-decoration: none !important;
+}
+
+.detail__description-info_des p:last-child{
+    text-decoration: underline dotted;
+}
+
+@media screen and (max-width:992px) {
+    .detail__header{
+        min-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail__header,
+    .detail__description
+     {
+        padding: 4rem 2rem;
+    }
+
+
+    .detail__description-info{
+        flex-direction: column;
+    }
+
+    .detail__description-info_content,
+    .detail__description-info_des{
+        text-align: center;
+    }
+
+    .detail__description-title h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project__detail-header_heading h1{
+        font-size: 70px;
+    }
+    .detail__description-title h1{
+        font-size: 35px;
+        line-height: 80px;
+    }
+    .detail__header,
+    .detail__description
+     {
+        padding: 4rem 1rem;
+    }
+}
