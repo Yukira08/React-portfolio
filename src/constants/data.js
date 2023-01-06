@@ -55,6 +55,7 @@ const projects = [
         sub_title : 'This project is a socket team project during my second year. It is an on-time chat web application allows users to send and receive data, messages and notifications without delay having similar fuctions as popular chat application.',
         description : 'This project is a socket team project during my second year. It is an on-time chat web application allows users to send and receive data, messages and notifications without delay having similar fuctions as popular chat application.',
         demo : false ,
+        github : "https://github.com/TranXuanAnh441/socketchat",
         role : "Front-end Developer",
         timeline : "Nov 2021 - Jan 2022",
         tech : "HTML, CSS, Bootstrap, JavaScript, Django, Emoji Picker",
