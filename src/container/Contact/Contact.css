@@ -124,3 +124,10 @@
         padding-left: 2px;
     }
 }
+
+@media screen and (max-width:250px){
+    .contact__header {
+        font-size: 45px;
+        line-height: 60px;
+    }
+}

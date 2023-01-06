@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
 
@@ -38,7 +39,7 @@ const Navbar = () => {
               <FiMenu size={27} onClick={() => setToggleMenu(true)} />
             )}
             {toggleMenu && (
-              <div class="my__navbar-menu-container scale-up-center">
+              <div class="my__navbar-menu-container scale-up-center slide-in-right">
                 <div className="my__navbar-links-container">
                   <Menu />
                 </div>

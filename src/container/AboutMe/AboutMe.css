@@ -70,10 +70,11 @@
 
 .about__info-icons a{
     padding: 1rem 2rem;
+    font-size: 40px;
 }
 
 .about__icons{
-    color : #9EB7E5
+    color : #9EB7E5;
 }
 
 .about__icons:hover{
@@ -132,5 +133,12 @@
 
     .about__info-icons a{
         padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .about__info-icons a{
+        font-size: 30px;
+        padding: 1rem 0.5rem;
     }
 }

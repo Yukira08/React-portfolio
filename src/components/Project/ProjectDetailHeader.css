@@ -100,7 +100,7 @@
 
 @media screen and (max-width:992px) {
     .detail__header{
-        min-height: 60vh;
+        min-height: 80vh;
     }
 }
 
@@ -139,5 +139,14 @@
     .detail__description
      {
         padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .detail__description-title h1{
+        font-size: 30px;
+    }
+    .detail__description-info_content h3{
+        font-size: 30px;
     }
 }

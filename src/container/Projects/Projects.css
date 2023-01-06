@@ -32,11 +32,31 @@
     margin-right: 2rem;
 }
 
+.projects__container-groupA .projects__container-project_content h3{
+    font-size: 60px;
+}
+
 .projects__container-groupB{
     flex: 1;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .projects__container-groupA .projects__container-project_images{
+        height: 50%;
+    }
+
+    .projects__container-groupA .projects__container-project_content h3{
+        margin-top: 2rem;
+        font-size: 70px;
+    }
+
+    .projects__container-groupA .projects__container-project_content p{
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -81,5 +101,15 @@
     .projects__heading h1{
         font-size: 45px;
         line-height: 50px;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .projects__heading h1{
+        font-size: 35px;
+    }
+
+    .projects__container-groupA .projects__container-project_content h3{
+        font-size: 40px;
     }
 }

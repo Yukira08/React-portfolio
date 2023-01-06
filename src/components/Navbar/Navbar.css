@@ -39,12 +39,37 @@
     font-family: var(--font-alt);
     font-weight: 500;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 25px;
     text-transform: capitalize;
+    transition: 0.3s ease-in-out;
 
     margin: 0 1rem;
 }
+
+.my__navbar-links a:hover{
+    color: #5b83cb;
+    transform: translateY(-0.15em);
+}
+
+.my__navbar-links_container p a:hover{
+    color: #5b83cb;
+}
+
+.my__navbar-links_container p{
+    position: relative;
+}
+
+.my__navbar-links_container p a:hover::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: var(--color-blue);
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+}
+
 
 .my__navbar-menu{
     margin-left: 1rem;
@@ -54,21 +79,20 @@
 
 .my__navbar-menu-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 
-    text-align: center;
-    background: var(--color-grey);
-    padding: 2rem;
-    position: absolute;
-    top: 55px;
-    right: 0;
+    background-color: rgb(242, 242, 242,0.9);
+    padding: 2rem 2rem;
+    position: fixed;
+    top: 74px;
+    right: 0px;
+    width: 250px;
+    height: 100vh;
     margin-top: 1rem;
-    border-radius: 5px;
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
    
-
 }
 
 .my__navbar-menu-container a{
@@ -77,8 +101,8 @@
     font-family: var(--font-alt);
     font-weight: 500;
     text-decoration: none;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 40px;
     text-transform: capitalize;
 }
 
@@ -89,18 +113,29 @@
     .my__navbar-links_container{
         display: none;
     }
-
+    .my__navbar-links-container{
+        transition:  0.3s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 300px) {
     .my__navbar {
         flex-direction: column;
     }
+
     .my__navbar-links_logo{
         line-height: 90px;
         font-size: 50px;
     }
+    .my__navbar-menu-container a{
+        font-size: 18px;
+    }
+
     .my__navbar-menu{
         margin-bottom: 1rem;
+    }
+    .my__navbar-menu-container{
+        top: 116px;
+        width: 100%;
     }
 }

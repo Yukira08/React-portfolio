@@ -2,14 +2,17 @@ import React from "react";
 
 import Project from "../../components/Project/Project";
 import data from "../../constants/data.js";
+import { Zoom } from "react-awesome-reveal";
 import "./Projects.css";
 
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      <div className="projects__heading">
-        <h1>Projects</h1>
-      </div>
+      <Zoom>
+        <div className="projects__heading">
+          <h1>Projects</h1>
+        </div>
+      </Zoom>
       <div className="projects__container">
         <div className="projects__container-groupA">
           {data.projects.slice(0, 1).map((project) => (
