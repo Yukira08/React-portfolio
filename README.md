@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo here :
 
-### https://idyllic-begonia-14e7be.netlify.app/
+### https://magenta-babka-9e5ec9.netlify.app
 
 ## Available Scripts
 
