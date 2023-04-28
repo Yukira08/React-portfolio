@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo here :
 
-### https://magenta-babka-9e5ec9.netlify.app
+### https://neon-fairy-686f72.netlify.app
 P.S currently contact form is not working so please contact me via email if you want to. Thank you.
 
 ## Available Scripts
